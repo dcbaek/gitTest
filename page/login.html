@@ -1,0 +1,75 @@
+<?php include('../page/header.html');?>
+<style>
+
+.login-box h2 {
+	font-size:35px;
+	text-align:center;
+	padding-top:50px;
+}
+.login-box  {
+	width:100%;
+	margin:0 auto;
+	max-width:400px;
+	padding: 10px;
+}
+.login ul li {
+	padding:5px;
+	}
+
+input[type="text"]{width:100%; height:40px;}
+input[type="password"]{width:100%; height:40px;}
+
+button {
+	width:100%;
+	height:40px;
+	text-align:center;
+	background: #000;
+	color:#fff;
+	border:0;
+	}
+
+.login-box .opt-box {overflow: hidden; margin:20px 0;}
+.login-box .opt-box span:first-child {float:left;}
+.login-box .opt-box span:last-child {float:right;}
+.login-box .opt-box span a {display:inline-block; padding:0 10px;}
+
+.join-btn{margin:10px 0;}
+.join-btn a{
+	display:block;
+	border: 1px solid #ccc;
+	line-height:50px;
+	text-align:center;
+	border-radius:30px;
+	}
+</style>
+
+<div class="login-wrap">
+	<div class="login-box">
+		<h2>통합 로그인</h2>
+		<div class="login">
+			<form action="">
+				<ul>
+					<li><input type="text" placeholder="아이디"></li>
+					<li><input type="password" placeholder="패스워드"></li>
+					<li class="btn">
+						<button>로그인</button>
+					</li>
+				</ul>
+				<div class = "opt-box">
+					<span>
+						<input type="checkbox" id="rem"><label for="rem">로그인 기억하기</label>
+					</span>
+					<span>
+						<a href="#none">아이디 찾기</a>
+						<a href="#none">비밀번호 찾기</a>
+					</span>
+				</div>
+				<div class="join-btn">
+					<a href="#none">회원가입하기</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<?php include('../page/footer.html');?>
