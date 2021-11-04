@@ -18,6 +18,7 @@
     />
 
  <script src="https://kit.fontawesome.com/120766c696.js" crossorigin="anonymous"></script>
+ <script src="https://artbyus.co.kr/js/jquery-1.12.4.min.js"></script>
 
  </head>
 
@@ -62,6 +63,30 @@
 					</ul>
 				</nav>			
 			</div>
+<style>
+.bt-box{position:relative;}
+.m_menu{
+	position:absolute; 
+	left:200px;
+	
+	font-size:20px;
+	}
+nav {transform: translate(-100%, 0px); transition:all 0.3s:}
+nav.active{transform: translate(0%, 0px);}
+
+</style>
+
+			<a href="#none" class="m_menu"><i class="fas fa-bars"></i></a>
 		</div>
 
  </header>
+
+ 
+<script>
+$(document).ready(function() {
+	$(".m_menu").click(function(){
+		$("nav").toggleClass("active");
+				
+	});
+});
+</script>
