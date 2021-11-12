@@ -7,7 +7,6 @@
         <div class="swiper-slide"><img src="./img/aespa-nextlevel.jpg" alt=""></div>
         <div class="swiper-slide"><img src="./img/aespa-forever.jpg" alt=""></div>
         <div class="swiper-slide"><img src="./img/aespa-savage02 .jpg" alt=""></div>
-		<div class="swiper-slide"><img src="./img/aespa-100m.jpg" alt=""></div>
 		<div class="swiper-slide"><img src="./img/winter02.jpg" alt=""></div>
       </div>
       <div class="swiper-button-next"></div>
@@ -41,63 +40,83 @@
 
 <article class="container">
 	<div class="main_content">
-		<div class="main_title">
-			<h2>AESPA</h2>
-		</div>
-			<div class="circle">
-				<ul>
-					<li><a href="#none"><img class="img_box" src="./img/winter01.jpg" alt=""></a>
-					<p class="circle-txt">WINTER</p></li>
-					<li><a href="#none"><img class="img_box" src="./img/karina.jpg" alt=""></a>
-					<p class="circle-txt">KARINA</p></li>
-					<li><a href="#none"><img class="img_box" src="./img/ningning01.jpg" alt=""></a>
-					<p class="circle-txt">NINGNING</p></li>
-					<li><a href="#none"><img class="img_box" src="./img/gisells01.jpg" alt=""></a>
-					<p class="circle-txt">GISELLE</p></li>
-				</ul>
+		<div class="content01">
+			<div class="main_title">
+				<h2>AESPA</h2>
 			</div>
-		<div class="main_title">
-			<h2>ALBUM</h2>
+				<div class="circle">
+					<ul>
+						<li>
+							<div>
+								<a href="#none"><img class="img_box" src="./img/winter01.jpg" alt=""></a>
+							</div>
+							<p class="circle-txt">WINTER</p>
+						</li>
+						<li>
+							<div>
+								<a href="#none"><img class="img_box" src="./img/karina.jpg" alt=""></a>			
+							</div>
+							<p class="circle-txt">KARINA</p>
+						</li>
+						<li>
+							<div>
+								<a href="#none"><img class="img_box" src="./img/ningning01.jpg" alt=""></a>
+							</div>
+							<p class="circle-txt">NINGNING</p>
+						</li>
+						<li>
+							<div>
+								<a href="#none"><img class="img_box" src="./img/gisells01.jpg" alt=""></a>
+							</div>
+							<p class="circle-txt">GISELLE</p>
+						</li>
+					</ul>
+				</div>
 		</div>
-		<!-- Swiper -->
-			<div class="swiper mySwiper02">
-				  <div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/BlackMamba.jpg" alt=""></a>
-							<p>BLACKMAMBA</p>
-						</div>
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/Forever.jpg" alt=""></a>
-							<p>Forever</p>
-						</div>
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/NextLevel.jpg" alt=""></a>
-							<p>NEXTLEVEL</p>
-						</div>
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/Savage.jpg" alt=""></a>
-							<p>SAVAGE</p>
-						</div>
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/NextLevelRemixes.jpg" alt=""></a>
-							<p>NEXTLEVEL REMIXES</p>
-						</div>
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/NextLevelRemixes.jpg" alt=""></a>
-							<p>NEXTLEVEL REMIXES</p>
-						</div>
-						<div class="swiper-slide">
-							<a href="#none"><img src="./img/NextLevelRemixes.jpg" alt=""></a>
-							<p>NEXTLEVEL REMIXES</p>
-						</div>
-				  </div>
-				  <div class="swiper-button-next"></div>
-				  <div class="swiper-button-prev"></div>
+		<div class="content02">
+			<div class="main_title">
+				<h2>ALBUM</h2>
 			</div>
+			<!-- Swiper -->
+				<div class="swiper mySwiper02">
+					  <div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/BlackMamba.jpg" alt=""></a>
+								<p>BLACKMAMBA</p>
+							</div>
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/Forever.jpg" alt=""></a>
+								<p>Forever</p>
+							</div>
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/NextLevel.jpg" alt=""></a>
+								<p>NEXTLEVEL</p>
+							</div>
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/Savage.jpg" alt=""></a>
+								<p>SAVAGE</p>
+							</div>
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/NextLevelRemixes.jpg" alt=""></a>
+								<p>NEXTLEVEL REMIXES</p>
+							</div>
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/NextLevelRemixes.jpg" alt=""></a>
+								<p>NEXTLEVEL REMIXES</p>
+							</div>
+							<div class="swiper-slide">
+								<a href="#none"><img src="./img/NextLevelRemixes.jpg" alt=""></a>
+								<p>NEXTLEVEL REMIXES</p>
+							</div>
+					  </div>
+					  <div class="swiper-button-next"></div>
+					  <div class="swiper-button-prev"></div>
+				</div>
+		</div>
 			<!-- Initialize Swiper -->
 			<script>
 			  var swiper = new Swiper(".mySwiper02", {
-				slidesPerView: 3,
+				slidesPerView: 2,
 				spaceBetween: 30,
 				pagination: {
 				  el: ".swiper-pagination",
@@ -107,31 +126,60 @@
 				  nextEl: ".swiper-button-next",
 				  prevEl: ".swiper-button-prev",
 				},
+				breakpoints: {
+				  481: {
+					slidesPerView:2,
+					spaceBetween: 20,
+				  },
+				  721: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				  },
+				  1025: {
+					slidesPerView: 3,
+					spaceBetween: 50,
+				  },
+				},
 			  });
 			</script>
-		</div>
+	
 
-
-</article>
-
-<div class="main_attraction">
-	<div class="main_title">
-		<div>
+	<div class="main_attraction">
+		<div class="main_title">
 			<div>
-				<p>AESPA</p>
-				<h2>HALLO WEEN</h2>
+				<div>
+					<p>AESPA</p>
+					<h2>HALLO WEEN</h2>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="attraction">
-		<ul>
-			<li><img src="./img/winter-halloween02.jpg" alt=""><p>Pretty</p><h3>WINTER</h3></li>
-			<li><img src="./img/karina-halloween.jpg" alt=""><p>Cute</p><h3>KARINA</h3></li>
-			<li><img src="./img/giselle-halloween.jpg" alt=""><p>Sexy</p><h3>GISELLE</h3></li>
-			<li><img src="./img/ningning-halloween.jpg" alt=""><p>Good-hearted</p><h3>NINGNING</h3></li>
-		</ul>
+		<div class="attraction">
+			<ul>
+				<li>
+					<div><img src="./img/winter-halloween02.jpg" alt=""></div>
+					<p>Pretty</p>
+					<h3>WINTER</h3>
+				</li>
+				<li>
+					<div><img src="./img/karina-halloween.jpg" alt=""></div>
+					<p>Cute</p>
+					<h3>KARINA</h3>
+				</li>
+				<li>
+					<div><img src="./img/giselle-halloween.jpg" alt=""></div>
+					<p>Sexy</p>
+					<h3>GISELLE</h3>
+				</li>
+				<li>
+					<div><img src="./img/ningning-halloween.jpg" alt=""></div>
+					<p>Good-hearted</p>
+					<h3>NINGNING</h3>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
 
+</article>
 <?php include ('./page/footer.html');?>

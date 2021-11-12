@@ -1,0 +1,116 @@
+<?php include('../page/header.html');?>
+
+<style>
+.new-box {width:100%; max-width:1200px; margin:0 auto;}
+.new-box > ul > li {display:flex; border-bottom: 1px solid #ccc;}
+.new-box > ul > li > div {text-align:center; padding:20px 0;}
+
+.new-box > ul > li > div.no{width:10%}
+.new-box > ul > li > div.subject{width:70%;}
+.new-box > ul > li > div.date{width:20%}
+
+.new-box .new-hd {padding-top:100px;}
+.new-box > ul.new-hd > li > div{border-top:3px solid #000;}
+
+.new-box > ul.new-hd > li > div{font-size:21px; font-weight:600;}
+.new-box > ul.new-bd > li > div.subject{display:flex;text-align:left;}
+.new-box > ul.new-bd > li > div img{width:100%; height:100%;}
+
+.new-box  div.subject-img{width:100px;}
+.new-box div.subject-txt{padding-left:10px;}
+.new-box div.subject-txt h2 {padding-bottom:10px;}
+
+</style>
+
+<div class="new-wrap">
+	<div class="new-box">
+		<ul class="new-hd">
+			<li>
+				<div class="no">번호</div>
+				<div class="subject">제목</div>
+				<div class="date">등록일</div>
+			</li>
+		</ul>
+		<ul class="new-bd">
+				<li>
+					<div class="no">1</div>
+					<div class="subject">
+						<div class="subject-img">
+							<a href="/web/02/page/view.html"><img src="../img/winter_logo.jpg" alt=""></a>
+						</div>
+						<div class="subject-txt">
+							<a href="/web/02/page/view.html">
+								<h2>게시물제목</h2>
+								<p>게시물내용이요</p>
+							</a>
+						</div>
+					</div>
+					<div class="date">2021-12-31</div>
+				</li>
+				<li>
+					<div class="no">2</div>
+					<div class="subject">
+						<div class="subject-img">
+							<a href="#none"><img src="../img/winter_logo.jpg" alt=""></a>
+						</div>
+						<div class="subject-txt">
+							<a href="#none">
+								<h2>게시물제목</h2>
+								<p>게시물내용이요</p>
+							</a>
+						</div>
+					</div>
+					<div class="date">2021-12-31</div>
+				</li>
+				<li>
+					<div class="no">3</div>
+					<div class="subject">
+						<div class="subject-img">
+							<a href="#none"><img src="../img/winter_logo.jpg" alt=""></a>
+						</div>
+						<div class="subject-txt">
+							<a href="#none">
+								<h2>게시물제목</h2>
+								<p>게시물내용이요</p>
+							</a>
+						</div>
+					</div>
+					<div class="date">2021-12-31</div>
+				</li>
+			</ul>
+	</div>
+	<div class="new-wrap02">
+		<div class="new-btn">
+			<a href="/web/02/page/bbs_write.html">등록하기</a>
+		</div>
+
+		<div class="paging">
+			<ul>
+				<li><a href="#none">처음</a></li>
+				<li><a href="#none">01</a></li>
+				<li><a href="#none">02</a></li>
+				<li><a href="#none">03</a></li>
+				<li><a href="#none">마지막</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<style>
+
+.new-wrap02 {width:100%; max-width:1200px; margin:0 auto;}
+
+.new-btn {text-align:right; padding:20px;}
+
+.new-btn a {
+	margin:20px;
+	font-size:20px;
+	line-height:40px;
+	width:100%;
+	background: #000;
+	color:#fff;
+	border:0;
+	}
+</style>
+
+<?php include('../page/footer.html');?>

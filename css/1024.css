@@ -1,0 +1,32 @@
+.main_content .circle ul > li > div {
+	display: block;
+	width: 200px;
+	height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+	border: 1px solid #000;
+	}
+.main_content .circle ul > {
+	text-align: center;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+	justify-content: space-around;
+	}
+.attraction ul > li > div {
+	display: block;
+	width: 200px;
+	height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+	border: 1px solid #000;
+	}
+.attraction ul {
+	text-align: center;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+	justify-content: space-around;
+	}

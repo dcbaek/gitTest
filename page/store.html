@@ -1,0 +1,135 @@
+<?php include('../page/header.html');?>
+<style>
+.wrap {width:100%; max-width:1200px; margin:0 auto;}
+.store-container .title {padding:20px; text-align:center;}
+.store-container .title h2 {font-size:40px;}
+.store-container .title p {font-size:20px;}
+.store-container .guide-box {width:100%; max-width:1200px;}
+.store-container .box-list ul {display:flex; justify-content: space-around; }
+.store-container .box-list ul > li > div{padding: 15px;}
+.store-container .box-list ul p{text-align: center; font-size:20px;}
+.store-container .box-list .box-radius {	
+	display: block;
+	width: 200px;
+	height: 200px;
+    border-radius: 30%;
+    overflow: hidden;
+	}
+.store-container .box-list .box-radius img{width:100%; height:100%;}
+.article-wrap .value {
+	background:color black;
+	}
+</style>
+
+d
+<style>
+.graph{width: 100%; display: flex;}
+.graph span{ background: #000; display: block; width: 33.33%; height: 30px; transition:all 0.3s; position:relative}
+.graph span:nth-child(1){width: 33.33%; background: #ccc;}
+.graph span:nth-child(2){width: 33.33%; background: red;}
+.graph span:nth-child(3){width: 33.33%; background: blue;}
+.graph span i{display: inline-block; position: absolute; left:0; top:-20px; height: 40px; background: #; color: #;}
+</style>
+
+
+<div class="graph">
+	<span style="width:30%">
+		<i>민주당</i>
+	</span>
+	<span style="width:40%">
+		<i>정의당</i>
+	</span>
+	<span style="width:30%"></span>
+</div>
+b
+<section class="store-container">
+		<div class="wrap">
+			
+			<div class="title">
+				<h2>제목</h2>
+				<p>부제목</p>
+			</div>
+
+			<div class="guide-box">
+				<div class="box-list">
+					<ul>
+						<li>
+							<div>
+								<div class="box-radius"><a href="#value"><img src="../img/winter01.jpg" alt=""></a></div>
+								<div><p>윈터</p></div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="box-radius"><a href="#value"><img src="../img/winter01.jpg" alt=""></a></div>
+								<div><p>정말</p></div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="box-radius"><a href="#value"><img src="../img/winter01.jpg" alt=""></a></div>
+								<div><p>귀엽</p></div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="box-radius"><a href="#value"><img src="../img/winter01.jpg" alt=""></a></div>
+								<div><p>다람</p></div>
+							</div>
+						</li>
+					</ul>
+				</div>			
+			</div>
+
+		</div>
+
+
+	</section>
+
+<article class="article-wrap">
+	<div id="value" class="article-wrap value" style="display:block; opacity: 1;">
+		<div class="wrap">
+			
+				div.
+		
+		</div>
+	</div>
+
+</article>
+<style>
+
+</style>
+
+
+<script>
+ 
+
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+
+        scrollTop: $(hash).offset().top
+
+      }, 800, function(){
+
+        window.location.hash = hash;
+
+      });
+    } 
+  });
+});
+
+ 
+
+</script>​ 
+
+
+<?php include('../page/footer.html');?>

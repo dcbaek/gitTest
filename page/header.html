@@ -6,16 +6,22 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
+
   <meta name="viewport"
   content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
   
-  <title>휴스타 실습용</title>
+  <title>MY AE KWANGYA</title>
   <link rel="stylesheet" href="/web/02/css/set.css">
-   <link rel="stylesheet" href="/web/02/css/style.css"/>
-  <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+  <link rel="stylesheet" href="/web/02/css/style.css"/>
+  
+  <link rel="stylesheet" media="screen and (max-width: 480px)" href="/web/02/css/480.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="/web/02/css/720.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="/web/02/css/1024.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 1025px) and (max-width: 1400px)" href="/web/02/css/1400.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 1400px)" href="/web/02/css/pc.css"/>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
  <script src="https://kit.fontawesome.com/120766c696.js" crossorigin="anonymous"></script>
  <script src="https://artbyus.co.kr/js/jquery-1.12.4.min.js"></script>
@@ -57,26 +63,15 @@
 				<nav>
 					<ul>
 						<li><a href="/web/02/page/sub01.html">스튜디오</a></li>
-						<li><a href="#none">퍼포먼스</a></li>
-						<li><a href="#none">오디션</a></li>
-						<li><a href="#none">스토어</a></li>
+						<li><a href="/web/02/page/bbs_list.html">퍼포먼스</a></li>
+						<li><a href="/web/02/page/new_list.html">오디션</a></li>
+						<li><a href="/web/02/page/store.html">스토어</a></li>
 					</ul>
-				</nav>			
+				</nav>
+				<div class="menu">
+						<a href="#none" class="m_menu"><i class="fas fa-bars"></i></a>
+				</div>
 			</div>
-<style>
-.bt-box{position:relative;}
-.m_menu{
-	position:absolute; 
-	left:200px;
-	
-	font-size:20px;
-	}
-nav {transform: translate(-100%, 0px); transition:all 0.3s:}
-nav.active{transform: translate(0%, 0px);}
-
-</style>
-
-			<a href="#none" class="m_menu"><i class="fas fa-bars"></i></a>
 		</div>
 
  </header>
